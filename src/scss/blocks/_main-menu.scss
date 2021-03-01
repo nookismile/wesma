@@ -1,0 +1,17 @@
+.main-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 30px 35px;
+  border-right: 2px solid #e9ebf7;
+}
+
+.main-menu__item {
+
+}
+
