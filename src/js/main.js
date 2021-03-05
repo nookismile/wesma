@@ -62,9 +62,12 @@ $('.button-bubble').each(function() {
 $(document).ready(function() {
 
   $('.slider-number').slick({
-  infinite: true,
+  infinite: false,
   slidesToShow: 4,
-  slidesToScroll: 1
+  slidesToScroll: 1,
+  appendArrows: $('.arrows-main--number'),
+  prevArrow: '<div class="arrow-btn arrow-btn--prev"><svg><use xlink:href="../img/sprite.svg#icon-leftArrow"></use></svg></div>',
+  nextArrow: '<div class="arrow-btn arrow-btn--next"><svg><use xlink:href="../img/sprite.svg#icon-rightArrow"></use></svg></div>',
 });
 
 

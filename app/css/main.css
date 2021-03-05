@@ -1,14 +1,14 @@
 @font-face {
-  font-family: "Exo20-Black";
-  src: url("../fonts/Exo20-Black.woff2") format("woff2"), url("../Exo20-Black.woff") format("woff");
+  font-family: "Exo20-Bold";
+  src: url("../fonts/Exo20-Bold.woff2") format("woff2"), url("../Exo20-Bold.woff") format("woff");
   font-weight: weight;
   font-display: swap;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Exo20-Bold";
-  src: url("../fonts/Exo20-Bold.woff2") format("woff2"), url("../Exo20-Bold.woff") format("woff");
+  font-family: "Exo20-Black";
+  src: url("../fonts/Exo20-Black.woff2") format("woff2"), url("../Exo20-Black.woff") format("woff");
   font-weight: weight;
   font-display: swap;
   font-style: normal;
@@ -205,6 +205,11 @@ ul li {
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
+}
+
+.section {
+  padding: 80px 0;
 }
 
 .btn-actions {
@@ -522,10 +527,70 @@ ul li {
   color: #000000;
 }
 
+.number-info__img {
+  margin-bottom: 20px;
+}
+
+.number-info__img img {
+  margin: 0 auto;
+}
+
 .number-info__text {
+  padding: 0 40px;
   font-size: 18px;
   line-height: 1.5;
   color: #000000;
+}
+
+.logo-partners {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slider-wrapper {
+  position: relative;
+}
+
+.arrows-wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 65px;
+  margin: auto;
+}
+
+.arrows-main {
+  position: relative;
+  height: 200%;
+}
+
+.arrows-main--number .arrow-btn {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  cursor: pointer;
+}
+
+.arrows-main--number .arrow-btn svg {
+  width: 65px;
+  height: 100%;
+}
+
+.arrows-main--number .arrow-btn--prev {
+  left: -60px;
+}
+
+.arrows-main--number .arrow-btn--next {
+  right: -60px;
+}
+
+.arrows-main--number .arrow-btn.slick-disabled {
+  opacity: 0.2;
 }
 
 /*# sourceMappingURL=main.css.map */
